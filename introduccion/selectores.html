@@ -45,6 +45,28 @@
         {
             background: palegoldenrod;
         } /*Selector general de hermanos*/
+    
+    /*SELECTORES DE PSEUDOCLASES Y PSEUDOELEMENTOS*/
+        p:hover 
+        {
+            color:cyan;
+        } /*Este selector de pseudoclases cambia de color cuando pasamos el mouse por encima*/
+        div p:nth-child(2)
+        {
+            color: royalblue;
+        } /*El parrafo que este de segundo (el hijo #2) va a tener esa propiedad de color royalblue*/
+        p::first-letter 
+        {
+            color: teal;
+        } /*Este tipo de selector de pseudoelementos me permite acceder a aquellos elementos html que no podia acceder con los otros selectores basicos o combinadores*/
+        p::after
+        {
+            content: "🍕";
+        }
+        ::placeholder
+        {
+            color: tomato;
+        }
     </style>
 </head>
 <body>
@@ -53,6 +75,7 @@
     <a href="https://platzi.com/">Go to Platzi</a>
     <div>
         <p>Platzi</p>
+        <p>Master</p>
         <section>
             <p>Es increíble</p>
         </section>
@@ -61,5 +84,6 @@
         Master
     </section>
     <p>Hola</p>
+    <input type="text" placeholder="name">
 </body>
 </html>
