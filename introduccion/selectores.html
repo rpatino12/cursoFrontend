@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    /*SELECTORES BÁSICOS*/
         *
         {
             background: papayawhip;
@@ -26,11 +27,39 @@
         {
             color: blueviolet;
         } /*Selector de atributo*/
+    
+    /*SELECTORES COMBINADORES*/
+        div p
+        {
+            color: salmon;
+        } /*Selector descendientes*/
+        div > p
+        {
+            background: lightgreen;
+        } /*Selector hijo directo*/
+        div + section
+        {
+            background: plum;
+        } /*Selector elemento adyacente*/
+        div ~ p
+        {
+            background: palegoldenrod;
+        } /*Selector general de hermanos*/
     </style>
 </head>
 <body>
     <div class="title">Hola</div>
     <div id="title2">mundo</div>
     <a href="https://platzi.com/">Go to Platzi</a>
+    <div>
+        <p>Platzi</p>
+        <section>
+            <p>Es increíble</p>
+        </section>
+    </div>
+    <section>
+        Master
+    </section>
+    <p>Hola</p>
 </body>
 </html>
