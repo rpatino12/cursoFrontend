@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background: palegreen;
+            padding: 20px;
+            box-sizing: border-box; 
+            /*Esta propiedad de border-box sirve para que la medida real de la caja que establecemos en width y en height tenga en cuenta la medida del padding y del border*/
+            border: 2px solid lime;
+            box-shadow: 10px 10px 10px teal;
+            margin: 20px 0px;
+        }
+        div:hover
+        {
+            background: rgb(127, 207, 127);
+            border: 1px solid rgb(1, 155, 1);
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <div>Es lo máximo</div>
+</body>
+</html>
