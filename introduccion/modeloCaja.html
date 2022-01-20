@@ -23,10 +23,25 @@
             background: rgb(127, 207, 127);
             border: 1px solid rgb(1, 155, 1);
         }
+        p
+        {
+            margin: 20px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            background: palegoldenrod;
+        }
+        /*Aqui podemos ver que una vez los elementos de tipo bloque se encuentran dentro de un flexbox o un grid, ya las margenes entre ellos no se colapsan*/
     </style>
 </head>
 <body>
     <div>Platzi</div>
     <div>Es lo máximo</div>
+    <section class="container">
+        <p>Coder</p>
+        <p>Master</p>
+    </section>
 </body>
 </html>
