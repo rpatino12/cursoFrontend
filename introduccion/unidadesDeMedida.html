@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida</title>
+    <style>
+        html
+        {
+            font-size: 62.5%;
+            /* Aqui lo que hacemos es convertir la medida del font-size dandole un valor de 62.5%, haciendo una regla de tres, para que 1 rem = 10 pixeles */
+        }
+        body
+        {
+            margin: 0px;
+        }
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        p
+        {
+            font-size: 2rem;
+            /* Por defecto, 1rem = 16 pixeles, lo que es igual al font-size que tiene por defecto el documento en html 5 */
+        }
+        .container
+        {
+            width: 100vw;
+            height: 100vh;
+            /*Al darle un valor de 100vh (100 view height) en altura, quiere decir que ese container va a tomar todo el tamaño que estamos visualizando a lo largo en pantalla, es decir el vh y el vw dependen del tamaño del viewport*/
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <p>Master</p>
+    <div class="container">
+
+    </div>
+</body>
+</html>
