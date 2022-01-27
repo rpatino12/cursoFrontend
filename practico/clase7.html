@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles-clase7.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>YARDSale Login</title>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+            <form action="/" class="form">
+                <label for="email" class="label">Email address</label>
+                <input type="email" id="email" placeholder="user@platzi.com" class="input input-email"> <!--Recordar que se debe poner siempre el "id" del input igual al "for" del label-->
+
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password">
+
+                <input type="submit" value="Log in" class="primary-button login-button">
+                <!--Como estamos dentro de la etiqueta form, al darle el type = "submit" la etiqueta input toma forma de botón que sirve para enviar el formulario-->
+                <a href="/">Forgot my password</a>
+            </form>
+
+            <button class="secondary-button signup-button">Sign up</button>
+        </div>
+    </div>
+</body>
+</html>
