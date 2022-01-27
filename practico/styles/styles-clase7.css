@@ -15,6 +15,10 @@ body
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+input, button
+{
+    font-family: 'Quicksand', sans-serif;
+}
 .login
 {
     width: 100%;
