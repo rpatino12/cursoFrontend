@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles-clase4.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="" alt="logo" class="logo">
+
+            <h1 class="title">Create a new password</h1>
+            <p class="subtitle">Enter a new password for your account</p>
+
+            <form action="/" class="form">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password"> <!--Recordar que se debe poner siempre el "id" del input igual al "for" del label-->
+
+                <label for="new-password" class="label">Re-enter password</label>
+                <input type="password" id="new-password" placeholder="*********" class="input input-password">
+
+                <input type="submit" value="Confirm" class="primary-button login-button">
+                <!--Como estamos dentro de la etiqueta form, al darle el type = "submit" la etiqueta input toma forma de botón que sirve para enviar el formulario-->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
