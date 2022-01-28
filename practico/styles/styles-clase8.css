@@ -1,0 +1,101 @@
+:root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
+{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+body
+{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+input
+{
+    font-family: 'Quicksand', sans-serif;
+}
+.login
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container
+{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 300px;
+}
+.title
+{
+    font-size: var(--lg);
+    text-align: start;
+    margin-bottom: 48px;
+    margin-top: 36px;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+.form div
+{
+    display: flex;
+    flex-direction: column;
+}
+.label
+{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input
+{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 4px;
+    margin-bottom: 20px;
+}
+.input-name, .input-email, .input-password
+{
+    margin-bottom: 24px;
+}
+.primary-button
+{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+.login-button
+{
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+@media (max-width: 425px)
+{
+    .form-container
+    {
+        height: 100%;
+    }
+    .form /*Le damos un alto de 100% a ambos padres y un justify-content de space between para que se separen esas dos partes del formulario en mobile*/
+    {
+        height: 100%;
+        justify-content: space-between;
+    }
+}
