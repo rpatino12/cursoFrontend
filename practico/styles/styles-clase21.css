@@ -1,0 +1,131 @@
+:root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
+{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+body
+{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+button
+{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+}
+.my-order
+{
+    width: 360px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -2px 2px 4px var(--very-light-pink);
+}
+.title-container
+{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+.title-container img
+{
+    transform: rotate(180deg);
+}
+.title
+{
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-left: 16px;
+}
+.my-order-container
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 360px;
+    margin-top: 20px;
+}
+.shopping-cart
+{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.shopping-cart figure
+{
+    margin: 0;
+}
+.shopping-cart figure img
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-cart p:nth-child(2)
+{
+    color: var(--very-light-pink);
+}
+.shopping-cart p:nth-child(3)
+{
+    font-weight: bold;
+    font-size: var(--md);
+}
+.order-resume
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--text-input-field);
+    gap: 16px;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+}
+.order-resume p:nth-child(2)
+{
+    justify-self: flex-end;
+    font-weight: bold;
+    font-size: var(--md);
+}
+.order-resume p span:nth-child(1)
+{
+    font-weight: bold;
+    font-size: var(--md);
+}
+.primary-button
+{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 360px;
+    height: 60px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+@media (max-width:640px)
+{
+    .my-order
+    {
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: none;
+    }
+    .title-container
+    {
+        display: none;
+    }
+}
