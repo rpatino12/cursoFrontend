@@ -1,3 +1,4 @@
+/* General */
 :root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
 {
     --white: #FFFFFF;
@@ -15,17 +16,19 @@ body
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+/* Agregamos una clase inactive para que el menu este oculto */
+.inactive, nav .inactive
+{
+    display: none;
+}
+
+/* Navbar (general) */
 nav
 {
     display: flex;
     justify-content: space-between;
     padding: 0 28px;
     box-shadow: 0 2px 4px var(--very-light-pink);
-}
-/* Agregamos una clase inactive para que el menu este oculto */
-.inactive
-{
-    display: none;
 }
 .menu
 {
@@ -103,6 +106,7 @@ nav
     justify-content: center;
 }
 
+/* Menu en desktop */
 .desktop-menu
 {
     position: absolute;
@@ -153,6 +157,63 @@ nav
     display: inline-block;
     margin-bottom: 20px;
 }
+
+/* Menu en mobile */
+.mobile-menu
+{
+    position: absolute;
+    top: 60px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobile-menu div:first-child
+{
+    margin-bottom: 32px;
+}
+.mobile-menu a
+{
+    text-decoration: none;
+    /*Esta propiedad sirve para quitar el subrayado que viene por defecto con la etiqueta de ancore*/
+    color: var(--black);
+    font-weight: bold;
+}
+.mobile-menu ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*Esta propiedad sirve para quitar los puntos que vienen por defecto en las listas*/
+}
+.mobile-menu .categories
+{
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu .account-info
+{
+    margin-top: 24px;
+}
+.mobile-menu ul li
+{
+    margin-bottom: 24px;
+}
+.mobile-menu .sign-out li:nth-child(1)
+{
+    margin-bottom: 8px;
+}
+.mobile-menu .sign-out li:nth-child(1) a
+{
+    font-size: var(--sm);
+    font-weight: 300;
+}
+.mobile-menu .sign-out li:nth-child(2) a
+{
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
+
+/* Media queries */
 @media (max-width: 867px)
 {
     .navbar-left ul
@@ -169,6 +230,13 @@ nav
     .navbar-left ul, 
     .navbar-email, 
     .desktop-menu
+    {
+        display: none;
+    }
+}
+@media (min-width: 641px)
+{
+    .mobile-menu
     {
         display: none;
     }
